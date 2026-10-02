@@ -1,0 +1,45 @@
+{
+  "name": "chromium-webui-ts-plugin",
+  "displayName": "Chromium WebUI TypeScript Plugin",
+  "description": "Dynamic TypeScript import resolver and IntelliSense enhancer for Chromium WebUI",
+  "version": "1.0.0",
+  "publisher": "chromium",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://chromium.googlesource.com/chromium/src"
+  },
+  "keywords": [
+    "chromium",
+    "typescript",
+    "webui",
+    "import-resolver",
+    "vscode"
+  ],
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "activationEvents": [
+    "onLanguage:typescript",
+    "onLanguage:javascript"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "package": "node package_vsix.js"
+  },
+  "contributes": {
+    "typescriptServerPlugins": [
+      {
+        "name": "chromium-webui-ts-plugin",
+        "enableForWorkspaceTypeScriptVersions": true,
+        "languages": [
+          "typescript",
+          "typescriptreact",
+          "javascript",
+          "javascriptreact"
+        ]
+      }
+    ]
+  }
+}
