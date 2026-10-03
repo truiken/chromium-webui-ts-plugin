@@ -7,7 +7,7 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://chromium.googlesource.com/chromium/src"
+    "url": "https://github.com/truiken/chromium-webui-ts-plugin.git"
   },
   "keywords": [
     "chromium",
